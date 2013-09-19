@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E42340017EB8B120084D9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4233FF17EB8B120084D9AC /* Foundation.framework */; };
+		8E42340217EB8B120084D9AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E42340117EB8B120084D9AC /* CoreGraphics.framework */; };
+		8E42340417EB8B120084D9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E42340317EB8B120084D9AC /* UIKit.framework */; };
+		8E42340A17EB8B120084D9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E42340817EB8B120084D9AC /* InfoPlist.strings */; };
+		8E42340C17EB8B120084D9AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42340B17EB8B120084D9AC /* main.m */; };
+		8E42341017EB8B120084D9AC /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42340F17EB8B120084D9AC /* APAppDelegate.m */; };
+		8E42341317EB8B120084D9AC /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E42341117EB8B120084D9AC /* Main_iPhone.storyboard */; };
+		8E42341617EB8B120084D9AC /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E42341417EB8B120084D9AC /* Main_iPad.storyboard */; };
+		8E42341917EB8B120084D9AC /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42341817EB8B120084D9AC /* APViewController.m */; };
+		8E42341B17EB8B120084D9AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E42341A17EB8B120084D9AC /* Images.xcassets */; };
+		8E42342217EB8B120084D9AC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E42342117EB8B120084D9AC /* XCTest.framework */; };
+		8E42342317EB8B120084D9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4233FF17EB8B120084D9AC /* Foundation.framework */; };
+		8E42342417EB8B120084D9AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E42340317EB8B120084D9AC /* UIKit.framework */; };
+		8E42342C17EB8B120084D9AC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E42342A17EB8B120084D9AC /* InfoPlist.strings */; };
+		8E42342E17EB8B120084D9AC /* asyncImageGridTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42342D17EB8B120084D9AC /* asyncImageGridTests.m */; };
+		8E42343B17EB911A0084D9AC /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42343817EB911A0084D9AC /* Flickr.m */; };
+		8E42343C17EB911A0084D9AC /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42343A17EB911A0084D9AC /* FlickrPhoto.m */; };
+		8E42343F17EB9AE60084D9AC /* APFlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42343E17EB9AE60084D9AC /* APFlickrPhotoCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E42342517EB8B120084D9AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E4233F417EB8B120084D9AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E4233FB17EB8B120084D9AC;
+			remoteInfo = asyncImageGrid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E4233FC17EB8B120084D9AC /* asyncImageGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asyncImageGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4233FF17EB8B120084D9AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8E42340117EB8B120084D9AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8E42340317EB8B120084D9AC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8E42340717EB8B120084D9AC /* asyncImageGrid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "asyncImageGrid-Info.plist"; sourceTree = "<group>"; };
+		8E42340917EB8B120084D9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E42340B17EB8B120084D9AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E42340D17EB8B120084D9AC /* asyncImageGrid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "asyncImageGrid-Prefix.pch"; sourceTree = "<group>"; };
+		8E42340E17EB8B120084D9AC /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
+		8E42340F17EB8B120084D9AC /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
+		8E42341217EB8B120084D9AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		8E42341517EB8B120084D9AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		8E42341717EB8B120084D9AC /* APViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APViewController.h; sourceTree = "<group>"; };
+		8E42341817EB8B120084D9AC /* APViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APViewController.m; sourceTree = "<group>"; };
+		8E42341A17EB8B120084D9AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E42342017EB8B120084D9AC /* asyncImageGridTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = asyncImageGridTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E42342117EB8B120084D9AC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8E42342917EB8B120084D9AC /* asyncImageGridTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "asyncImageGridTests-Info.plist"; sourceTree = "<group>"; };
+		8E42342B17EB8B120084D9AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E42342D17EB8B120084D9AC /* asyncImageGridTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = asyncImageGridTests.m; sourceTree = "<group>"; };
+		8E42343717EB911A0084D9AC /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
+		8E42343817EB911A0084D9AC /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
+		8E42343917EB911A0084D9AC /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		8E42343A17EB911A0084D9AC /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
+		8E42343D17EB9AE60084D9AC /* APFlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APFlickrPhotoCell.h; sourceTree = "<group>"; };
+		8E42343E17EB9AE60084D9AC /* APFlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APFlickrPhotoCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E4233F917EB8B120084D9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E42340217EB8B120084D9AC /* CoreGraphics.framework in Frameworks */,
+				8E42340417EB8B120084D9AC /* UIKit.framework in Frameworks */,
+				8E42340017EB8B120084D9AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E42341D17EB8B120084D9AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E42342217EB8B120084D9AC /* XCTest.framework in Frameworks */,
+				8E42342417EB8B120084D9AC /* UIKit.framework in Frameworks */,
+				8E42342317EB8B120084D9AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E4233F317EB8B120084D9AC = {
+			isa = PBXGroup;
+			children = (
+				8E42340517EB8B120084D9AC /* asyncImageGrid */,
+				8E42342717EB8B120084D9AC /* asyncImageGridTests */,
+				8E4233FE17EB8B120084D9AC /* Frameworks */,
+				8E4233FD17EB8B120084D9AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E4233FD17EB8B120084D9AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E4233FC17EB8B120084D9AC /* asyncImageGrid.app */,
+				8E42342017EB8B120084D9AC /* asyncImageGridTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E4233FE17EB8B120084D9AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E4233FF17EB8B120084D9AC /* Foundation.framework */,
+				8E42340117EB8B120084D9AC /* CoreGraphics.framework */,
+				8E42340317EB8B120084D9AC /* UIKit.framework */,
+				8E42342117EB8B120084D9AC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E42340517EB8B120084D9AC /* asyncImageGrid */ = {
+			isa = PBXGroup;
+			children = (
+				8E42343D17EB9AE60084D9AC /* APFlickrPhotoCell.h */,
+				8E42343E17EB9AE60084D9AC /* APFlickrPhotoCell.m */,
+				8E42340E17EB8B120084D9AC /* APAppDelegate.h */,
+				8E42340F17EB8B120084D9AC /* APAppDelegate.m */,
+				8E42341117EB8B120084D9AC /* Main_iPhone.storyboard */,
+				8E42341417EB8B120084D9AC /* Main_iPad.storyboard */,
+				8E42341717EB8B120084D9AC /* APViewController.h */,
+				8E42341817EB8B120084D9AC /* APViewController.m */,
+				8E42343717EB911A0084D9AC /* Flickr.h */,
+				8E42343817EB911A0084D9AC /* Flickr.m */,
+				8E42343917EB911A0084D9AC /* FlickrPhoto.h */,
+				8E42343A17EB911A0084D9AC /* FlickrPhoto.m */,
+				8E42341A17EB8B120084D9AC /* Images.xcassets */,
+				8E42340617EB8B120084D9AC /* Supporting Files */,
+			);
+			path = asyncImageGrid;
+			sourceTree = "<group>";
+		};
+		8E42340617EB8B120084D9AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E42340717EB8B120084D9AC /* asyncImageGrid-Info.plist */,
+				8E42340817EB8B120084D9AC /* InfoPlist.strings */,
+				8E42340B17EB8B120084D9AC /* main.m */,
+				8E42340D17EB8B120084D9AC /* asyncImageGrid-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E42342717EB8B120084D9AC /* asyncImageGridTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E42342D17EB8B120084D9AC /* asyncImageGridTests.m */,
+				8E42342817EB8B120084D9AC /* Supporting Files */,
+			);
+			path = asyncImageGridTests;
+			sourceTree = "<group>";
+		};
+		8E42342817EB8B120084D9AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E42342917EB8B120084D9AC /* asyncImageGridTests-Info.plist */,
+				8E42342A17EB8B120084D9AC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E4233FB17EB8B120084D9AC /* asyncImageGrid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E42343117EB8B120084D9AC /* Build configuration list for PBXNativeTarget "asyncImageGrid" */;
+			buildPhases = (
+				8E4233F817EB8B120084D9AC /* Sources */,
+				8E4233F917EB8B120084D9AC /* Frameworks */,
+				8E4233FA17EB8B120084D9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = asyncImageGrid;
+			productName = asyncImageGrid;
+			productReference = 8E4233FC17EB8B120084D9AC /* asyncImageGrid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E42341F17EB8B120084D9AC /* asyncImageGridTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E42343417EB8B120084D9AC /* Build configuration list for PBXNativeTarget "asyncImageGridTests" */;
+			buildPhases = (
+				8E42341C17EB8B120084D9AC /* Sources */,
+				8E42341D17EB8B120084D9AC /* Frameworks */,
+				8E42341E17EB8B120084D9AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E42342617EB8B120084D9AC /* PBXTargetDependency */,
+			);
+			name = asyncImageGridTests;
+			productName = asyncImageGridTests;
+			productReference = 8E42342017EB8B120084D9AC /* asyncImageGridTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E4233F417EB8B120084D9AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Anton Pauli";
+				TargetAttributes = {
+					8E4233FB17EB8B120084D9AC = {
+						DevelopmentTeam = S8AL89GLAH;
+					};
+					8E42341F17EB8B120084D9AC = {
+						TestTargetID = 8E4233FB17EB8B120084D9AC;
+					};
+				};
+			};
+			buildConfigurationList = 8E4233F717EB8B120084D9AC /* Build configuration list for PBXProject "asyncImageGrid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E4233F317EB8B120084D9AC;
+			productRefGroup = 8E4233FD17EB8B120084D9AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E4233FB17EB8B120084D9AC /* asyncImageGrid */,
+				8E42341F17EB8B120084D9AC /* asyncImageGridTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E4233FA17EB8B120084D9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E42341617EB8B120084D9AC /* Main_iPad.storyboard in Resources */,
+				8E42341B17EB8B120084D9AC /* Images.xcassets in Resources */,
+				8E42341317EB8B120084D9AC /* Main_iPhone.storyboard in Resources */,
+				8E42340A17EB8B120084D9AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E42341E17EB8B120084D9AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E42342C17EB8B120084D9AC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E4233F817EB8B120084D9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E42343F17EB9AE60084D9AC /* APFlickrPhotoCell.m in Sources */,
+				8E42340C17EB8B120084D9AC /* main.m in Sources */,
+				8E42341917EB8B120084D9AC /* APViewController.m in Sources */,
+				8E42343B17EB911A0084D9AC /* Flickr.m in Sources */,
+				8E42343C17EB911A0084D9AC /* FlickrPhoto.m in Sources */,
+				8E42341017EB8B120084D9AC /* APAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E42341C17EB8B120084D9AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E42342E17EB8B120084D9AC /* asyncImageGridTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E42342617EB8B120084D9AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E4233FB17EB8B120084D9AC /* asyncImageGrid */;
+			targetProxy = 8E42342517EB8B120084D9AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E42340817EB8B120084D9AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E42340917EB8B120084D9AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E42341117EB8B120084D9AC /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E42341217EB8B120084D9AC /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		8E42341417EB8B120084D9AC /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E42341517EB8B120084D9AC /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8E42342A17EB8B120084D9AC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E42342B17EB8B120084D9AC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E42342F17EB8B120084D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E42343017EB8B120084D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E42343217EB8B120084D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asyncImageGrid/asyncImageGrid-Prefix.pch";
+				INFOPLIST_FILE = "asyncImageGrid/asyncImageGrid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E42343317EB8B120084D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asyncImageGrid/asyncImageGrid-Prefix.pch";
+				INFOPLIST_FILE = "asyncImageGrid/asyncImageGrid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8E42343517EB8B120084D9AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/asyncImageGrid.app/asyncImageGrid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asyncImageGrid/asyncImageGrid-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "asyncImageGridTests/asyncImageGridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8E42343617EB8B120084D9AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/asyncImageGrid.app/asyncImageGrid";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "asyncImageGrid/asyncImageGrid-Prefix.pch";
+				INFOPLIST_FILE = "asyncImageGridTests/asyncImageGridTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E4233F717EB8B120084D9AC /* Build configuration list for PBXProject "asyncImageGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E42342F17EB8B120084D9AC /* Debug */,
+				8E42343017EB8B120084D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E42343117EB8B120084D9AC /* Build configuration list for PBXNativeTarget "asyncImageGrid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E42343217EB8B120084D9AC /* Debug */,
+				8E42343317EB8B120084D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E42343417EB8B120084D9AC /* Build configuration list for PBXNativeTarget "asyncImageGridTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E42343517EB8B120084D9AC /* Debug */,
+				8E42343617EB8B120084D9AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E4233F417EB8B120084D9AC /* Project object */;
+}
