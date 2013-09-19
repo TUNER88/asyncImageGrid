@@ -67,8 +67,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     APFlickrPhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell" forIndexPath:indexPath];
     NSString *searchTerm = self.searches[indexPath.section];
-    cell.photo = self.searchResults[searchTerm]
-    [indexPath.row];
+    cell.photo = self.searchResults[searchTerm][indexPath.row];
+    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 // 4
@@ -96,16 +96,15 @@
     NSString *searchTerm = self.searches[indexPath.section];
     FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
     // 2
-    CGSize retval = photo.thumbnail.size.width > 0 ? photo.thumbnail.size : CGSizeMake(100, 100);
-    retval.height += 35;
-    retval.width += 35;
+    CGSize retval = CGSizeMake(236, 236);
+    //retval.height += 35;
+    //retval.width += 35;
     return retval;
 }
 
 // 3
-- (UIEdgeInsets)collectionView:
-(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake(50, 20, 50, 20);
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(20, 20, 20, 20);
 }
 
 
