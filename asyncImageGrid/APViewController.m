@@ -16,6 +16,8 @@
 @property(nonatomic, strong) NSMutableArray *searches;
 @property(nonatomic, strong) Flickr *flickr;
 @property(nonatomic, weak) IBOutlet UICollectionView *collectionView;
+@property(nonatomic) int cellSize;
+- (IBAction)cellSizeChanged:(id)sender;
 @end
 
 @implementation APViewController
@@ -23,6 +25,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    self.cellSize = 0;
 	self.searches = [@[] mutableCopy];
     self.searchResults = [@{} mutableCopy];
     self.flickr = [[Flickr alloc] init];
@@ -93,10 +97,18 @@
 
 // 1
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *searchTerm = self.searches[indexPath.section];
-    FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
-    // 2
-    CGSize retval = CGSizeMake(236, 236);
+    //NSString *searchTerm = self.searches[indexPath.section];
+    //FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
+    
+    
+    if(self.cellSize == 0){
+        return CGSizeMake(118, 118);
+    } else if(self.cellSize == 1){
+        return CGSizeMake(236, 236);
+    }
+    
+
+    CGSize retval = CGSizeMake(350, 350);
     //retval.height += 35;
     //retval.width += 35;
     return retval;
@@ -107,5 +119,25 @@
     return UIEdgeInsetsMake(20, 20, 20, 20);
 }
 
+#pragma mark – Interdace rotation
 
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+                                duration:(NSTimeInterval)duration
+{
+//    if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
+//        CGRect newFrame = CGRectMake(0, 0, 1024, 768);
+//        [self.collectionView setFrame:newFrame];
+//    } else {
+//        CGRect newFrame = CGRectMake(0, 0, 768, 1024);
+//        [self.collectionView setFrame:newFrame];
+//    }
+}
+
+- (IBAction)cellSizeChanged:(id)sender {
+    UISegmentedControl *tempSegment = sender;
+    self.cellSize = tempSegment.selectedSegmentIndex;
+    [self.collectionView performBatchUpdates:nil completion:nil];
+    
+    NSLog(@"set new sell size to: %i", self.cellSize);
+}
 @end
